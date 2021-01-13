@@ -1,0 +1,25 @@
+#main-image{
+    background-image: url("../images/main-car.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 65%; 
+    background-size: cover;
+    height: 95vh;
+    width: 100vw;
+}
+#gradient{
+    // background-position: 50% 100%;
+    background-image: linear-gradient(to left, rgba(0,0,0,1.0), rgba(204, 49, 49, 0) 50%);
+}
+#logo{
+    width: 380px;
+    grid-column: 3/4;
+    grid-row: 1;
+    margin-top: 100px;
+    margin-left: 500px;
+    padding-bottom: 0;
+}
+.logo-mini{
+    float: left;
+    height: 15px;
+    margin: 20px 40px;
+}
