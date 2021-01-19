@@ -1,45 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>D'Lux Auto Spa | Detail</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta>
   <link rel="stylesheet" href="https://use.typekit.net/qfh4bwn.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div id="main-image">
-    <div id="gradient">
+  <div class="grid-container">
 
-      <nav>
-        <div id="main-nav">
-          <img class="logo-mini" src="images/logo2.png" alt="dlux auto & spa logo">
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </div>     
-      </nav>
+    <nav id="main-nav">
+      <img class="logo-mini" src="images/logo2.png" alt="dlux auto & spa logo">
+      <ul>
+        <li><a href=#main>Home</a></li>
+        <li><a href=#services>Services</a></li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>   
+    </nav>
 
-      <main>
-        <div id="wrapper">
-          <h1 class="title">D'LUX</h1>
-          <h2 class="title">AUTO SPA</h2>
-          <h3>Premium quality auto detail.</h3>
-          <!-- <img id="logo" src="images/logo.png" alt="dlux auto & spa logo"> -->
-          <div class="button">
-            <button id="service-button">Services</button>
+    <header id="main">
+      <div id="main-image">
+        <div id="gradient"> 
+          <div id="landing-wrapper">
+            <h1 class="title">D'LUX</h1>
+            <h2 class="title">AUTO SPA</h2>
+            <h3>Premium quality auto detail.</h3>
+            <!-- <img id="logo" src="images/logo.png" alt="dlux auto & spa logo"> -->
+            <div class="button">
+              <a href=#services>
+                <button id="service-button">Services</button>
+              </a>
+
+          </div>
         </div>
-      </main>
+      </div>
+    </header>
 
-    </div>
+    <main>
+      <section>
+        <div id="services">
+
+          <h2 class="service-title">Services</h2>
+          <figure class="service-image">
+            <img src="images/lambo.jpeg" id="lambo" alt="silver lamborghini">
+          </figure>
+
+          <div class="service-info">
+            <h2>
+              Exterior
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.et.
+            </p>
+            <figure>
+              <img src="images/water.jpeg" id="water" class="service-image" alt="water splash">
+            </figure>
+           
+          </div>
+
+                        
+          <div class="service-info">
+            <h2>
+              Interior
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.et.
+            </p>
+            <figure class="interior">
+              <img src="images/interior.jpeg" id="interior" class="service-image" alt="white leather interior of car">
+            </figure>
+          </div>
+
+                        
+          <div class="service-info">
+            <h2>
+              Engine
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.et.
+            </p>
+            <figure>
+              <img src="images/engine.jpeg" id="engine" alt="car engine">
+            </figure>
+ 
+          </div>
+        </div>
+        
+      </section>
+
+      <section>
+        <div id="contact">
+          <div class="contact-card">
+            
+          </div>
+          <div class="contact-card">
+
+          </div>
+        </div>
+      </section>
+   </main>
   </div>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -1,5 +1,35 @@
-#wrapper{
+#landing-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, 1fr);
+    // grid-template-rows: repeat(auto-fill, 1fr);
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 55px auto-fit(1fr, 1fr);
+    grid-template-areas: 
+    
+    "navigation navigation navigation navigation"
+    "header header header header"
+    "main main main main"
+}
+
+nav{
+    grid-area: navigation;
+}
+
+header{
+
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    
+
+}
+section{
+    margin-top: -117px;
+}
+
