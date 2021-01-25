@@ -4,7 +4,7 @@
     z-index: 1000;
     width: 100%;
     background-color: #181818;
-    height: 55px;
+    height: 52px;
     ul{
         // display: flex;
         // justify-content: space-around;
@@ -12,6 +12,9 @@
         // float: right;
         text-align: center;
         padding-right: 50px;
+        a{
+            padding: 25px;
+        }
     }
     li{
         display: inline-block;

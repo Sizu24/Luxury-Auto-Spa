@@ -7,12 +7,12 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 55px auto-fit(1fr, 1fr);
     grid-template-areas: 
-    
+
     "navigation navigation navigation navigation"
     "header header header header"
     "main main main main"
+    "footer footer footer footer"
 }
 
 nav{
@@ -20,16 +20,19 @@ nav{
 }
 
 header{
-
     grid-area: header;
 }
 
 main{
     grid-area: main;
-    
-
 }
-section{
-    margin-top: -117px;
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(53, 53, 53);
+    height: 75px;
+    padding: 25px;
 }
 

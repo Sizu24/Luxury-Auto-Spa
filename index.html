@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -18,14 +19,14 @@
     <nav id="main-nav">
       <img class="logo-mini" src="images/logo2.png" alt="dlux auto & spa logo">
       <ul>
-        <li><a href=#main>Home</a></li>
+        <li><a href=#header>Home</a></li>
         <li><a href=#services>Services</a></li>
         <li>About</li>
-        <li>Contact</li>
+        <li><a href=#contact>Contact</a></li>
       </ul>   
     </nav>
 
-    <header id="main">
+    <header id="header">
       <div id="main-image">
         <div id="gradient"> 
           <div id="landing-wrapper">
@@ -37,7 +38,10 @@
               <a href=#services>
                 <button id="service-button">Services</button>
               </a>
-
+            </div>
+            <a href=#services id="arrow-link">
+              <img id="arrow" src="images/arrow.png" alt="arrow pointing down">
+            </a>
           </div>
         </div>
       </div>
@@ -47,17 +51,17 @@
       <section>
         <div id="services">
 
-          <h2 class="service-title">Services</h2>
+          <h2 class="service-title"></h2>
           <figure class="service-image">
             <img src="images/lambo.jpeg" id="lambo" alt="silver lamborghini">
           </figure>
 
           <div class="service-info">
             <h2>
-              Exterior
+              Services
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.et.
+              We detail any range of cars, trucks, SUVs, vans, luxury, and exotic vehicles. 
             </p>
             <figure>
               <img src="images/water.jpeg" id="water" class="service-image" alt="water splash">
@@ -68,7 +72,7 @@
                         
           <div class="service-info">
             <h2>
-              Interior
+              Exterior
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.et.
@@ -81,7 +85,7 @@
                         
           <div class="service-info">
             <h2>
-              Engine
+              Interior
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.et.
@@ -89,7 +93,12 @@
             <figure>
               <img src="images/engine.jpeg" id="engine" alt="car engine">
             </figure>
- 
+            <h2>
+              Engine
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.et.
+            </p>
           </div>
         </div>
         
@@ -97,15 +106,18 @@
 
       <section>
         <div id="contact">
-          <div class="contact-card">
-            
-          </div>
-          <div class="contact-card">
-
-          </div>
+          <h2>Have questions? Want to schedule an appointment?</h2>
+          <h3>Contact US</h3>
+          <button id="email">Email Us</button> 
+          <p id="phone">Telephone: 775-555-5555</p>
         </div>
       </section>
+
    </main>
+   <footer>
+    <i class="fab fa-instagram"></i>
+    <p>Copyright D'Lux Mobile Auto Spa, LLC 2021</p>
+   </footer>
   </div>
 
   <script src="js/scripts.js"></script>

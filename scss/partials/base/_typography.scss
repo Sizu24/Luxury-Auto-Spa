@@ -64,16 +64,16 @@ h3{
     // font-family: 'Ubuntu', sans-serif;
     position: absolute;
     z-index: 1;
-    top: 750px;
-    left: 100px;
+    top: 800px;
+    left: 150px;
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 4em;
     overflow: hidden;
     // color: rgb(156, 156, 156);
 }
 
 .service-info{
-    background-color: #e9e9e9;
+    background-color: #f7f7f7;
     h2{
         float: left;
         padding: 70px 0;
@@ -88,7 +88,34 @@ h3{
         width: 38%;
     }
 }
-a:visited{
-    color: #a7a7a7f1;
+a{
+    &:link{
+        color: #a7a7a7f1;
+    }
+    &:visited{
+        color: #a7a7a7f1;
+    }
 
+}
+#contact{
+    h2, h3{
+        font-family: 'Lato', sans-serif;
+        margin: 20px 100px;
+        color: #000;
+    }
+}
+#email{
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-card{
+    font-family: 'Lato', sans-serif;
+}
+footer{
+    p{
+        color: rgb(230, 230, 230);
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+    }
 }
