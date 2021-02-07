@@ -5,6 +5,7 @@
 }
 
 .grid-container{
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
@@ -26,7 +27,10 @@ header{
 main{
     grid-area: main;
 }
-
+// .service-info{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+// }
 footer{
     grid-area: footer;
     display: flex;
