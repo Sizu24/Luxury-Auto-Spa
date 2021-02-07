@@ -8,6 +8,7 @@
 }
 // button on landing page
 #service-button{
+    opacity: 0;
     padding: 20px 80px;
     border: 3px solid #f1f1f1f1;
     border-radius: 50px;
@@ -17,6 +18,7 @@
     &:hover{
         background-color: rgb(255, 255, 255);
         color: #1f1f1f;
+        cursor: pointer;
     }
 }
 
@@ -28,6 +30,9 @@
     padding: 15px 125px;
     border-radius: 50px;
     border: none;
+    &:hover{
+        cursor: pointer;
+    }
 
 }
 #phone{
@@ -47,4 +52,10 @@
     // border: 2px solid rgb(112, 112, 112);
     border: 2px solid #f1f1f1;
     border-radius: 50px;
+    transition-duration: 600ms;
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        color: #1f1f1f;
+        cursor: pointer;
+    }
 }

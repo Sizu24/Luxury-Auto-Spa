@@ -48,8 +48,9 @@ figure{
     // margin-bottom: -4px;
     border: none;
 }
-#water{
+#exterior{
     width: 100%;
+    top: 300px;
     // overflow: hidden;
 }
 #interior{
@@ -95,4 +96,8 @@ i{
         animation: bounce 2s infinite ease-in;
     }
 }
-
+.fa-instagram{
+    &:hover{
+        cursor: pointer;
+    }
+}

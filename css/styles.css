@@ -372,6 +372,7 @@ template {
 
 .title {
   text-align: center;
+  opacity: 0;
 }
 
 h1 {
@@ -393,7 +394,7 @@ h2 {
   font-style: normal;
   grid-column: 3/5;
   grid-row: 2;
-  font-size: 3.2em;
+  font-size: 3em;
   color: #f1f1f1f1;
   margin-top: 15px;
   margin-left: auto;
@@ -454,6 +455,8 @@ h3 {
   margin: 20px 50px;
   color: #f1f1f1;
   width: 38%;
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
 }
 
 a:link {
@@ -461,6 +464,10 @@ a:link {
 }
 a:visited {
   color: #a7a7a7f1;
+}
+
+.schedule-button {
+  font-family: "Lato", sans-serif;
 }
 
 #contact h2, #contact h3 {
@@ -506,11 +513,9 @@ footer p {
   padding: 5px 10px;
   margin: 0 20px;
   transition-duration: 500ms;
+  cursor: pointer;
 }
 #main-nav li:hover {
-  background-color: #adadad;
-  color: #3b3b3b;
-  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -523,6 +528,7 @@ footer p {
 }
 
 #service-button {
+  opacity: 0;
   padding: 20px 80px;
   border: 3px solid #f1f1f1f1;
   border-radius: 50px;
@@ -533,6 +539,7 @@ footer p {
 #service-button:hover {
   background-color: white;
   color: #1f1f1f;
+  cursor: pointer;
 }
 
 #email {
@@ -543,6 +550,9 @@ footer p {
   padding: 15px 125px;
   border-radius: 50px;
   border: none;
+}
+#email:hover {
+  cursor: pointer;
 }
 
 #phone {
@@ -560,6 +570,12 @@ footer p {
   margin: 0 50px;
   border: 2px solid #f1f1f1;
   border-radius: 50px;
+  transition-duration: 600ms;
+}
+.schedule-button:hover {
+  background-color: white;
+  color: #1f1f1f;
+  cursor: pointer;
 }
 
 #main-image {
@@ -612,8 +628,9 @@ figure {
   border: none;
 }
 
-#water {
+#exterior {
   width: 100%;
+  top: 300px;
 }
 
 #interior {
@@ -656,6 +673,10 @@ i {
   margin-top: 150px;
   margin-right: 400px;
   animation: bounce 2s infinite ease-in;
+}
+
+.fa-instagram:hover {
+  cursor: pointer;
 }
 
 #contact {
