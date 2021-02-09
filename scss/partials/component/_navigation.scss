@@ -5,31 +5,63 @@
     width: 100%;
     background-color: #181818;
     height: 52px;
-    ul{
-        // display: flex;
-        // justify-content: space-around;
 
-        // float: right;
+    ul{
         text-align: center;
-        padding-right: 50px;
-        a{
-            padding: 25px;
+        display: none;
+        @include mq($md){
+            display: block;
         }
     }
     li{
-        display: inline-block;
+        
         list-style: none;    
         color: #a7a7a7f1;
-        padding: 5px 10px;
-        margin: 0 20px;
+
         transition-duration: 500ms;
         cursor: pointer;
         &:hover{
-  
             // background-color: rgb(173, 173, 173);
             // color: rgb(59, 59, 59);
             // border-radius: 3px;
             cursor: pointer;
         }
     }
+    @include mq($md){
+        ul{
+            // display: flex;
+            // justify-content: space-around;
+            // float: right;
+            padding-right: 50px;
+            a{
+                padding: 25px;
+            }
+        }
+        li{
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 20px;
+        }
+    }
 }
+
+#hamburger{
+    float: right;
+    // margin: 5px 15px;
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+    @include mq($md){
+      display: none;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .line{
+    padding: 1px 0;
+    margin: 5px 0;
+    width: 24px;
+    background-color: rgb(230, 230, 230);
+    z-index: 1000;
+  }

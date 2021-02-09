@@ -1,16 +1,31 @@
 #landing-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  #landing-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .grid-container {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "navigation navigation navigation navigation" "header header header header" "main main main main" "footer footer footer footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "navigation" "header" "main" "footer";
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "navigation navigation navigation navigation" "header header header header" "main main main main" "footer footer footer footer";
+  }
 }
 
 nav {
+  grid-area: navigation;
+}
+
+.navbar {
   grid-area: navigation;
 }
 
@@ -381,11 +396,18 @@ h1 {
   font-style: normal;
   grid-column: 3/5;
   grid-row: 1;
-  font-size: 8em;
+  font-size: 4em;
   color: #f1f1f1f1;
-  margin: 60px 0 0;
+  margin: 50px 0 0 0;
+  padding-top: 45px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 1024px) {
+  h1 {
+    margin: 60px 0 0;
+    font-size: 8em;
+  }
 }
 
 h2 {
@@ -394,11 +416,16 @@ h2 {
   font-style: normal;
   grid-column: 3/5;
   grid-row: 2;
-  font-size: 3em;
+  font-size: 2em;
   color: #f1f1f1f1;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 3em;
+  }
 }
 
 h3 {
@@ -409,9 +436,13 @@ h3 {
   grid-row: 2;
   font-size: 1.1em;
   color: #f1f1f1f1;
-  margin: 80px 45px 0 50px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 1024px) {
+  h3 {
+    margin: 80px 45px 0 50px;
+  }
 }
 
 #main-nav li {
@@ -441,22 +472,39 @@ h3 {
 }
 
 .service-info {
-  padding: 50px 100px 70px 100px;
+  padding: 50px 0px 70px 0px;
   width: 100%;
   background-color: #0f0f0f;
 }
+@media (min-width: 768px) {
+  .service-info {
+    padding: 50px 100px 70px 100px;
+  }
+}
 .service-info h2 {
-  display: inline-block;
-  margin: 20px 50px;
+  text-align: left;
+  margin: 0px 50px;
   color: #f1f1f1;
 }
+@media (min-width: 768px) {
+  .service-info h2 {
+    display: inline-block;
+    margin: 20px 50px;
+  }
+}
 .service-info p {
-  display: inline-block;
-  margin: 20px 50px;
+  text-align: left;
+  margin: 40px 50px;
   color: #f1f1f1;
-  width: 38%;
   font-family: "Lato", sans-serif;
   line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .service-info p {
+    text-align: center;
+    width: 38%;
+    display: inline-block;
+  }
 }
 
 a:link {
@@ -501,74 +549,145 @@ footer p {
 }
 #main-nav ul {
   text-align: center;
-  padding-right: 50px;
+  display: none;
 }
-#main-nav ul a {
-  padding: 25px;
+@media (min-width: 768px) {
+  #main-nav ul {
+    display: block;
+  }
 }
 #main-nav li {
-  display: inline-block;
   list-style: none;
   color: #a7a7a7f1;
-  padding: 5px 10px;
-  margin: 0 20px;
   transition-duration: 500ms;
   cursor: pointer;
 }
 #main-nav li:hover {
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  #main-nav ul {
+    padding-right: 50px;
+  }
+  #main-nav ul a {
+    padding: 25px;
+  }
+  #main-nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 20px;
+  }
+}
+
+#hamburger {
+  float: right;
+  padding: 10px;
+  height: 45px;
+  width: 45px;
+}
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+}
+#hamburger:hover {
+  cursor: pointer;
+}
+
+.line {
+  padding: 1px 0;
+  margin: 5px 0;
+  width: 24px;
+  background-color: #e6e6e6;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
 
 .button {
-  grid-column: 3/5;
-  grid-row: 2;
-  margin-top: 180px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  margin: 380px auto 0 auto;
+}
+@media (min-width: 1024px) {
+  .button {
+    grid-column: 3/5;
+    grid-row: 2;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #service-button {
-  opacity: 0;
-  padding: 20px 80px;
-  border: 3px solid #f1f1f1f1;
+  padding: 10px 150px;
+  border: 2px solid #f1f1f1f1;
   border-radius: 50px;
   background-color: transparent;
   color: #f1f1f1f1;
   transition-duration: 600ms;
+  opacity: 0;
 }
 #service-button:hover {
   background-color: white;
   color: #1f1f1f;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  #service-button {
+    padding: 20px 80px;
+    border: 3px solid #f1f1f1f1;
+  }
+}
 
 #email {
   display: inline;
-  background-color: red;
+  background-color: #0084ff;
   color: #fff;
-  margin: 80px 50px;
-  padding: 15px 125px;
+  margin: 60px 50px 40px 50px;
+  padding: 15px 165px;
   border-radius: 50px;
   border: none;
 }
 #email:hover {
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  #email {
+    padding: 15px 125px;
+    margin: 80px 50px;
+  }
+}
 
 #phone {
   display: inline;
   border: 2px solid black;
-  padding: 15px 70px;
+  padding: 14px 130px;
   border-radius: 50px;
+  color: #1f1f1f;
+}
+@media (min-width: 768px) {
+  #phone {
+    padding: 14px 90px;
+  }
+}
+
+.phone-link {
+  text-decoration: none;
 }
 
 .schedule-button {
-  display: inline-block;
+  padding: 10px 135px;
+  margin: 0 auto;
+  display: block;
   background-color: transparent;
   color: #f1f1f1;
-  padding: 10px 25px;
-  margin: 0 50px;
-  border: 2px solid #f1f1f1;
+  border: 1px solid #f1f1f1;
   border-radius: 50px;
   transition-duration: 600ms;
 }
@@ -577,19 +696,37 @@ footer p {
   color: #1f1f1f;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .schedule-button {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0 50px;
+    padding: 10px 25px;
+  }
+}
 
 #main-image {
-  margin-top: 52px;
-  background-image: url("../images/main-car.jpg");
-  background-repeat: no-repeat;
-  background-position: 100% 65%;
+  background-image: url("../images/main-car-small.jpeg");
   background-size: cover;
-  height: 100vh;
+  background-position: center;
   width: 100vw;
+  height: 100vh;
+}
+@media (min-width: 1024px) {
+  #main-image {
+    background-image: url("../images/main-car.jpg");
+    margin-top: 52px;
+    background-position: 100% 65%;
+  }
 }
 
 #gradient {
-  background-image: linear-gradient(to left, black, rgba(204, 49, 49, 0) 50%);
+  background-image: linear-gradient(to bottom, black, rgba(204, 49, 49, 0) 50%);
+}
+@media (min-width: 1024px) {
+  #gradient {
+    background-image: linear-gradient(to left, black, rgba(204, 49, 49, 0) 50%);
+  }
 }
 
 #logo {
@@ -602,16 +739,26 @@ footer p {
 }
 
 .logo-mini {
-  float: left;
-  height: 15px;
   margin: 20px 40px;
+  height: 8px;
+  float: left;
+}
+@media (min-width: 768px) {
+  .logo-mini {
+    height: 15px;
+  }
 }
 
 figure {
   margin: 0;
-  margin-top: -24px;
-  height: 450px;
   overflow: hidden;
+  height: 20.5em;
+}
+@media (min-width: 768px) {
+  figure {
+    margin-top: -24px;
+    height: 450px;
+  }
 }
 
 .service-info figure {
@@ -623,9 +770,13 @@ figure {
 
 #white-car {
   position: relative;
-  bottom: 300px;
   width: 100%;
   border: none;
+}
+@media (min-width: 768px) {
+  #white-car {
+    bottom: 300px;
+  }
 }
 
 #exterior {
@@ -635,15 +786,24 @@ figure {
 
 #interior {
   width: 100%;
-  top: -200px;
+  top: 0px;
   position: relative;
   bottom: 250px;
+}
+@media (min-width: 1024px) {
+  #interior {
+    top: -200px;
+  }
 }
 
 #engine {
   width: 100%;
   position: relative;
-  bottom: 200px;
+}
+@media (min-width: 768px) {
+  #engine {
+    bottom: 200px;
+  }
 }
 
 i {
@@ -664,15 +824,24 @@ i {
   }
 }
 #arrow-link {
+  animation: bounce 2s infinite ease-in;
   grid-column: 3;
   padding: 5px;
 }
 #arrow-link #arrow {
-  color: red;
-  height: 75px;
-  margin-top: 150px;
-  margin-right: 400px;
-  animation: bounce 2s infinite ease-in;
+  display: none;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #arrow-link {
+    padding: 5px;
+  }
+  #arrow-link #arrow {
+    display: block;
+    height: 75px;
+    margin-top: 110px;
+    margin-right: 400px;
+  }
 }
 
 .fa-instagram:hover {

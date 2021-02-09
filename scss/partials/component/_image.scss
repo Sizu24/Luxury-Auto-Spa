@@ -1,15 +1,21 @@
 #main-image{
-    margin-top: 52px;
-    background-image: url("../images/main-car.jpg");
-    background-repeat: no-repeat;
-    background-position: 100% 65%; 
+    background-image: url("../images/main-car-small.jpeg");
     background-size: cover;
-    height: 100vh;
+    background-position: center;
     width: 100vw;
+    height: 100vh;
+    @include mq($lg){
+        background-image: url("../images/main-car.jpg");
+        margin-top: 52px;
+        background-position: 100% 65%; 
+    }
 }
 #gradient{
     // background-position: 50% 100%;
-    background-image: linear-gradient(to left, rgba(0,0,0,1.0), rgba(204, 49, 49, 0) 50%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1.0), rgba(204, 49, 49, 0) 50%);
+    @include mq($lg){
+        background-image: linear-gradient(to left, rgba(0,0,0,1.0), rgba(204, 49, 49, 0) 50%);
+    }
 }
 #logo{
     width: 380px;
@@ -20,16 +26,22 @@
     padding-bottom: 0;
 }
 .logo-mini{
-    float: left;
-    height: 15px;
     margin: 20px 40px;
+    height: 8px;
+    float: left;
+    @include mq($md){
+        height: 15px;
+    }
 }
 
 figure{
     margin: 0;
-    margin-top: -24px;
-    height: 450px;
     overflow: hidden;
+    height: 20.5em;
+    @include mq($md){
+        margin-top: -24px;
+        height: 450px;
+    }
 }
 
 .service-info{
@@ -43,10 +55,12 @@ figure{
 
 #white-car{
     position: relative;
-    bottom: 300px;
     width: 100%;
     // margin-bottom: -4px;
     border: none;
+    @include mq($md){
+        bottom: 300px;
+    }
 }
 #exterior{
     width: 100%;
@@ -55,14 +69,20 @@ figure{
 }
 #interior{
     width: 100%;
-    top: -200px;
+    top: 0px;
     position: relative;
     bottom: 250px;
+    @include mq($lg){
+        top: -200px;
+    }
 }
 #engine{
     width: 100%;
     position: relative;
-    bottom: 200px;
+    @include mq($md){
+        bottom: 200px;
+    }
+
 }
 
 i{
@@ -85,16 +105,26 @@ i{
     }
 }
 #arrow-link{
+    animation: bounce 2s infinite ease-in;
     grid-column: 3;
     padding: 5px;
+
     #arrow{
-        color: red;
-        height: 75px;
-  
-        margin-top: 150px;
-        margin-right: 400px;
-        animation: bounce 2s infinite ease-in;
+        display: none;
+        text-align: center;
     }
+    @include mq($md){
+
+        padding: 5px;
+        #arrow{
+            display: block;
+            height: 75px;
+            margin-top: 110px;
+            margin-right: 400px;
+    
+        }
+    }
+
 }
 .fa-instagram{
     &:hover{
