@@ -42,8 +42,13 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
-  height: 75px;
+  height: 55px;
   padding: 25px;
+}
+@media (min-width: 768px) {
+  footer {
+    height: 75px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -418,7 +423,8 @@ h2 {
   grid-row: 2;
   font-size: 2em;
   color: #f1f1f1f1;
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -436,6 +442,7 @@ h3 {
   grid-row: 2;
   font-size: 1.1em;
   color: #f1f1f1f1;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -493,14 +500,17 @@ h3 {
   }
 }
 .service-info p {
+  font-size: 0.7em;
   text-align: left;
   margin: 40px 50px;
+  width: 50%;
   color: #f1f1f1;
   font-family: "Lato", sans-serif;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .service-info p {
+    font-size: 1em;
     text-align: center;
     width: 38%;
     display: inline-block;
@@ -523,6 +533,15 @@ a:visited {
   margin: 20px auto;
   color: #000;
 }
+#contact h2 {
+  padding: 25px 15px;
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  #contact h2 {
+    font-size: 2em;
+  }
+}
 
 #email {
   font-family: "Lato", sans-serif;
@@ -537,6 +556,12 @@ footer p {
   padding: 10px;
   text-align: center;
   margin: 0;
+  font-size: 0.8em;
+}
+@media (min-width: 768px) {
+  footer p {
+    font-size: 1em;
+  }
 }
 
 #main-nav {
@@ -612,7 +637,7 @@ button {
 
 .button {
   text-align: center;
-  margin: 240px auto 0 auto;
+  margin: 270px auto 0 auto;
 }
 @media (min-width: 1024px) {
   .button {
@@ -649,8 +674,8 @@ button {
   display: inline;
   background-color: #0084ff;
   color: #fff;
-  margin: 60px 50px 40px 50px;
-  padding: 15px 165px;
+  padding: 10px 105px;
+  margin: 25px 0;
   border-radius: 50px;
   border: none;
 }
@@ -667,7 +692,7 @@ button {
 #phone {
   display: inline;
   border: 2px solid black;
-  padding: 14px 130px;
+  padding: 8px 70px;
   border-radius: 50px;
   color: #1f1f1f;
 }
@@ -682,14 +707,15 @@ button {
 }
 
 .schedule-button {
-  padding: 10px 135px;
-  margin: 0 auto;
+  padding: 8px 80px;
+  margin: 0 25px;
   display: block;
   background-color: transparent;
   color: #f1f1f1;
   border: 1px solid #f1f1f1;
   border-radius: 50px;
   transition-duration: 600ms;
+  font-size: 0.8em;
 }
 .schedule-button:hover {
   background-color: white;
@@ -702,6 +728,7 @@ button {
     display: inline-block;
     margin: 0 50px;
     padding: 10px 25px;
+    font-size: 1em;
   }
 }
 
@@ -752,20 +779,14 @@ button {
 figure {
   margin: 0;
   overflow: hidden;
-  height: 20.5em;
+  height: 200px;
+  width: 100vw;
 }
 @media (min-width: 768px) {
   figure {
     margin-top: -24px;
     height: 450px;
   }
-}
-
-.service-info figure {
-  height: 200px;
-  width: 100vw;
-  margin: 0;
-  overflow: hidden;
 }
 
 #white-car {

@@ -30,7 +30,8 @@ h2{
     grid-row: 2;
     font-size: 2.0em;
     color: #f1f1f1f1;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     @include mq($lg){
@@ -45,6 +46,7 @@ h3{
     grid-row: 2;
     font-size: 1.1em;
     color: #f1f1f1f1;
+    margin-top: 0;
 
     margin-left: auto;
     margin-right: auto;
@@ -112,9 +114,10 @@ h3{
         color: #f1f1f1;
     }
     p{
- 
+        font-size: 0.7em;
         text-align: left;
         margin: 40px 50px;
+        width: 50%;
         // float: right;
         // padding: 70px 200px;
         // color: #242424;
@@ -122,6 +125,7 @@ h3{
         font-family: 'Lato', sans-serif;
         line-height: 1.40;
         @include mq($md){
+            font-size: 1em;
             text-align: center;
             width: 38%;
             display: inline-block;
@@ -147,6 +151,13 @@ a{
         margin: 20px auto;
         color: #000;
     }
+    h2{
+        padding: 25px 15px;
+        font-size: 1.5em;
+        @include mq($md){
+            font-size: 2em;
+        }
+    }
 }
 #email{
     font-family: 'Lato', sans-serif;
@@ -161,5 +172,9 @@ footer{
         padding: 10px;
         text-align: center;
         margin: 0;
+        font-size: 0.8em;
+        @include mq($md){
+            font-size: 1em;
+        }
     }
 }
