@@ -4,6 +4,12 @@
     background-position: center;
     width: 100vw;
     height: 100vh;
+    @include mq($xi){
+        height: 90vh;
+    }
+    @include mq($sm){
+        height: 100vh;
+    }
     @include mq($lg){
         background-image: url("../images/main-car.jpg");
         margin-top: 52px;
@@ -40,6 +46,9 @@ figure{
     height: 200px;
     width: 100vw;
     // height: 20.5em;
+    @include mq($sm){
+        height: 270px;
+    }
     @include mq($md){
         margin-top: -24px;
         height: 450px;

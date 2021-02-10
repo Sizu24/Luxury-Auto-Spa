@@ -639,6 +639,16 @@ button {
   text-align: center;
   margin: 270px auto 0 auto;
 }
+@media (min-width: 360px) {
+  .button {
+    margin-top: 465px;
+  }
+}
+@media (min-width: 414px) {
+  .button {
+    margin-top: 420px;
+  }
+}
 @media (min-width: 1024px) {
   .button {
     grid-column: 3/5;
@@ -663,47 +673,23 @@ button {
   color: #1f1f1f;
   cursor: pointer;
 }
+@media (min-width: 360px) {
+  #service-button {
+    padding: 8px 100px;
+    border: 3px solid #f1f1f1f1;
+  }
+}
+@media (min-width: 414px) {
+  #service-button {
+    padding: 8px 110px;
+    border: 3px solid #f1f1f1f1;
+  }
+}
 @media (min-width: 768px) {
   #service-button {
     padding: 20px 80px;
     border: 3px solid #f1f1f1f1;
   }
-}
-
-#email {
-  display: inline;
-  background-color: #0084ff;
-  color: #fff;
-  padding: 10px 105px;
-  margin: 25px 0;
-  border-radius: 50px;
-  border: none;
-}
-#email:hover {
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  #email {
-    padding: 15px 125px;
-    margin: 80px 50px;
-  }
-}
-
-#phone {
-  display: inline;
-  border: 2px solid black;
-  padding: 8px 70px;
-  border-radius: 50px;
-  color: #1f1f1f;
-}
-@media (min-width: 768px) {
-  #phone {
-    padding: 14px 90px;
-  }
-}
-
-.phone-link {
-  text-decoration: none;
 }
 
 .schedule-button {
@@ -722,6 +708,18 @@ button {
   color: #1f1f1f;
   cursor: pointer;
 }
+@media (min-width: 360px) {
+  .schedule-button {
+    padding: 10px 100px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 414px) {
+  .schedule-button {
+    padding: 10px 105px;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 768px) {
   .schedule-button {
     background-color: transparent;
@@ -732,12 +730,69 @@ button {
   }
 }
 
+#email {
+  display: inline;
+  background-color: #0084ff;
+  color: #fff;
+  padding: 10px 105px;
+  margin: 25px 0;
+  border-radius: 50px;
+  border: none;
+}
+#email:hover {
+  cursor: pointer;
+}
+@media (min-width: 414px) {
+  #email {
+    padding: 12px 140px;
+    margin: 45px 0;
+  }
+}
+@media (min-width: 768px) {
+  #email {
+    padding: 15px 125px;
+    margin: 80px 50px;
+  }
+}
+
+#phone {
+  display: inline;
+  border: 2px solid black;
+  padding: 8px 70px;
+  border-radius: 50px;
+  color: #1f1f1f;
+}
+@media (min-width: 414px) {
+  #phone {
+    padding: 10px 105px;
+  }
+}
+@media (min-width: 768px) {
+  #phone {
+    padding: 14px 90px;
+  }
+}
+
+.phone-link {
+  text-decoration: none;
+}
+
 #main-image {
   background-image: url("../images/main-car-small.jpeg");
   background-size: cover;
   background-position: center;
   width: 100vw;
   height: 100vh;
+}
+@media (min-width: 360px) {
+  #main-image {
+    height: 90vh;
+  }
+}
+@media (min-width: 414px) {
+  #main-image {
+    height: 100vh;
+  }
 }
 @media (min-width: 1024px) {
   #main-image {
@@ -781,6 +836,11 @@ figure {
   overflow: hidden;
   height: 200px;
   width: 100vw;
+}
+@media (min-width: 414px) {
+  figure {
+    height: 270px;
+  }
 }
 @media (min-width: 768px) {
   figure {

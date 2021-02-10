@@ -8,6 +8,12 @@ button{
     text-align: center;
     margin: 270px auto 0 auto;
     // margin: 380px auto 0 auto;
+    @include mq($xi){
+        margin-top: 465px;
+    }
+    @include mq($sm){
+        margin-top: 420px;
+    }
     @include mq($lg){
         grid-column: 3/5;
         grid-row: 2;
@@ -35,43 +41,18 @@ button{
         color: #1f1f1f;
         cursor: pointer;
     }
+    @include mq($xi){
+        padding: 8px 100px;
+        border: 3px solid #f1f1f1f1;
+    }
+    @include mq($sm){
+        padding: 8px 110px;
+        border: 3px solid #f1f1f1f1;
+    }
     @include mq($md){
         padding: 20px 80px;
         border: 3px solid #f1f1f1f1;
     }
-}
-
-#email{
-    display: inline;
-    background-color: rgb(0, 132, 255);
-    color: #fff;
-    // margin: 60px 50px 40px 50px;
-    padding: 10px 105px;
-    margin: 25px 0;
-    // padding: 15px 165px;
-    border-radius: 50px;
-    border: none;
-    &:hover{
-        cursor: pointer;
-    }
-    @include mq($md){
-        padding: 15px 125px;
-        margin: 80px 50px;
-    }
-}
-#phone{
-    display: inline;
-    border: 2px solid black;
-    padding: 8px 70px;
-    // padding: 14px 130px;
-    border-radius: 50px;
-    color: #1f1f1f;
-    @include mq($md){
-        padding: 14px 90px;
-    }
-}
-.phone-link{
-    text-decoration: none;
 }
 
 // Make appointment button in service section
@@ -92,6 +73,14 @@ button{
         color: #1f1f1f;
         cursor: pointer;
     }
+    @include mq($xi){
+        padding: 10px 100px;
+        margin: 0 auto;
+    }
+    @include mq($sm){
+        padding: 10px 105px;
+        margin: 0 auto;
+    }
     @include mq($md){
         background-color: transparent;
         display: inline-block;
@@ -99,4 +88,43 @@ button{
         padding: 10px 25px;
         font-size: 1em;
     }
+}
+#email{
+    display: inline;
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    // margin: 60px 50px 40px 50px;
+    padding: 10px 105px;
+    margin: 25px 0;
+    // padding: 15px 165px;
+    border-radius: 50px;
+    border: none;
+    &:hover{
+        cursor: pointer;
+    }
+    @include mq($sm){
+        padding: 12px 140px;
+        margin: 45px 0;
+    }
+    @include mq($md){
+        padding: 15px 125px;
+        margin: 80px 50px;
+    }
+}
+#phone{
+    display: inline;
+    border: 2px solid black;
+    padding: 8px 70px;
+    // padding: 14px 130px;
+    border-radius: 50px;
+    color: #1f1f1f;
+    @include mq($sm){
+        padding: 10px 105px;
+    }
+    @include mq($md){
+        padding: 14px 90px;
+    }
+}
+.phone-link{
+    text-decoration: none;
 }
