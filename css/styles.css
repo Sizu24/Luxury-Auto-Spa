@@ -528,6 +528,11 @@ a:visited {
   font-family: "Lato", sans-serif;
 }
 
+@media (min-width: 390px) {
+  #contact {
+    margin-top: 200px;
+  }
+}
 #contact h2, #contact h3 {
   font-family: "Lato", sans-serif;
   margin: 20px auto;

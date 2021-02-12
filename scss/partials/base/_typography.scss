@@ -146,6 +146,9 @@ a{
 }
 
 #contact{
+    @include mq($tw){
+        margin-top: 200px;
+    }
     h2, h3{
         font-family: 'Lato', sans-serif;
         margin: 20px auto;
