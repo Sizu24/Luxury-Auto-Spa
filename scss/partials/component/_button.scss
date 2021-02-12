@@ -46,11 +46,11 @@ button{
     }
     @include mq($xi){
         padding: 8px 100px;
-        border: 3px solid #f1f1f1f1;
+        border: 2px solid #f1f1f1f1;
     }
     @include mq($sm){
         padding: 8px 110px;
-        border: 3px solid #f1f1f1f1;
+
     }
     @include mq($md){
         padding: 20px 80px;

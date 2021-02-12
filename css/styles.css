@@ -530,7 +530,7 @@ a:visited {
 
 @media (min-width: 390px) {
   #contact {
-    margin-top: 400px;
+    margin-top: 700px;
   }
 }
 #contact h2, #contact h3 {
@@ -649,12 +649,12 @@ button {
     margin-top: 465px;
   }
 }
-@media (min-width: 390px) {
+@media (min-width: 414px) {
   .button {
-    margin-top: 360px;
+    margin-top: 420px;
   }
 }
-@media (min-width: 414px) {
+@media (min-width: 390px) {
   .button {
     margin-top: 420px;
   }
@@ -686,13 +686,12 @@ button {
 @media (min-width: 360px) {
   #service-button {
     padding: 8px 100px;
-    border: 3px solid #f1f1f1f1;
+    border: 2px solid #f1f1f1f1;
   }
 }
 @media (min-width: 414px) {
   #service-button {
     padding: 8px 110px;
-    border: 3px solid #f1f1f1f1;
   }
 }
 @media (min-width: 768px) {
