@@ -649,6 +649,11 @@ button {
     margin-top: 420px;
   }
 }
+@media (min-width: 390px) {
+  .button {
+    margin-top: 360px;
+  }
+}
 @media (min-width: 1024px) {
   .button {
     grid-column: 3/5;
@@ -748,6 +753,11 @@ button {
     margin: 45px 0;
   }
 }
+@media (min-width: 390px) {
+  #email {
+    padding: 10px 130px;
+  }
+}
 @media (min-width: 768px) {
   #email {
     padding: 15px 125px;
@@ -765,6 +775,11 @@ button {
 @media (min-width: 414px) {
   #phone {
     padding: 10px 105px;
+  }
+}
+@media (min-width: 390px) {
+  #phone {
+    padding: 8px 95px;
   }
 }
 @media (min-width: 768px) {
