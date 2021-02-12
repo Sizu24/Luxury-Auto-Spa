@@ -48,6 +48,9 @@ button{
         padding: 8px 100px;
         border: 2px solid #f1f1f1f1;
     }
+    @include mq($tw){
+        border: 2px solid #f1f1f1f1;
+    }
     @include mq($sm){
         padding: 8px 110px;
 
