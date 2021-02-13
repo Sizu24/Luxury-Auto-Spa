@@ -649,14 +649,14 @@ button {
     margin-top: 465px;
   }
 }
-@media (min-width: 414px) {
-  .button {
-    margin-top: 420px;
-  }
-}
 @media (min-width: 390px) {
   .button {
     margin-top: 360px;
+  }
+}
+@media (min-width: 414px) {
+  .button {
+    margin-top: 430px;
   }
 }
 @media (min-width: 1024px) {
