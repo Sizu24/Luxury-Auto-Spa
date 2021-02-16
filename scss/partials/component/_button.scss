@@ -15,7 +15,7 @@ button{
         margin-top: 360px;
     }
     @include mq($sm){
-        margin-top: 430px;
+        margin-top: 420px;
     }
     @include mq($lg){
         grid-column: 3/5;

@@ -1,5 +1,11 @@
 @mixin mq($size){
-    @media(min-width: $size){
+    @media only screen and (min-width: $size){
+        @content;
+    }
+}
+
+@mixin mqLand($size){
+    @media only screen and (min-width: $size) and (orientation: landscape){
         @content;
     }
 }
