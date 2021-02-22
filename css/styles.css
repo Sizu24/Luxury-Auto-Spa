@@ -611,9 +611,8 @@ footer p {
 
 #hamburger {
   float: right;
-  padding: 10px;
-  height: 45px;
-  width: 45px;
+  padding: 5px;
+  margin: 10px;
 }
 @media only screen and (min-width: 768px) {
   #hamburger {
@@ -630,6 +629,18 @@ footer p {
   width: 24px;
   background-color: #e6e6e6;
   z-index: 1000;
+}
+
+.active {
+  display: "block";
+  background-color: #181818;
+}
+.active li {
+  text-align: center;
+  padding: 15px 20px;
+}
+.active li:nth-of-type(n+2) {
+  margin-right: 30px;
 }
 
 a {
