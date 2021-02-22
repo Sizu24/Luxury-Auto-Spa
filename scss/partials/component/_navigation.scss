@@ -75,8 +75,16 @@
         &:nth-of-type(n+2){
             margin-right: 30px;
         }
-        a{
-            padding: 25px 115px;
+        @include mq($xs){
+            a{
+                padding: 25px 90px;
+            }
         }
+        @include mq($sm){
+            a{
+                padding: 25px 115px;
+            }
+        }
+
       }
   }

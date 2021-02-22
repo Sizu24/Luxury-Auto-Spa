@@ -642,8 +642,15 @@ footer p {
 .active li:nth-of-type(n+2) {
   margin-right: 30px;
 }
-.active li a {
-  padding: 25px 115px;
+@media only screen and (min-width: 321px) {
+  .active li a {
+    padding: 25px 90px;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .active li a {
+    padding: 25px 115px;
+  }
 }
 
 a {
