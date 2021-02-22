@@ -108,13 +108,15 @@ button{
         cursor: pointer;
     }
     @include mq($sm){
+        display: block;
         padding: 12px 140px;
-        margin: 45px 0;
+        margin: 45px auto;
     }
     @include mq($tw){
         padding: 10px 130px;
     }
     @include mq($md){
+        display: inline-block;
         padding: 15px 125px;
         margin: 80px 50px;
     }

@@ -69,10 +69,14 @@
     display: "block";
     background-color: #181818;
       li{
-          text-align: center;
-          padding: 15px 20px;
-          &:nth-of-type(n+2){
-              margin-right: 30px;
-          }
+        padding: 25px;
+        text-align: center;
+        // margin for list items, except for first item to offset margin for mini logo
+        &:nth-of-type(n+2){
+            margin-right: 30px;
+        }
+        a{
+            padding: 25px 150px;
+        }
       }
   }

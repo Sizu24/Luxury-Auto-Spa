@@ -25,18 +25,29 @@ engineDescription.innerHTML = services.engine;
     * Add ".active" class to nav links for styling
     * Remove mini logo when displaying nav links
 */
-hamburger.addEventListener("click", ()=>{
-    if(navLinks.style.display === "" || navLinks.style.display === "none"){
-        navLinks.classList.add("active");
-        navLinks.style.display = "block";
-        miniLogo.style.display = "none";
+window.addEventListener("click", e =>{
+    if(e.target.className === "js-burger" || e.target.className === "line"){
+        if(navLinks.style.display === "" || navLinks.style.display === "none"){
+            showLinks();
+        }else{
+            hideLinks();
+        }
     }else{
-        navLinks.classList.remove("active");
-        navLinks.style.display = "none";
-        miniLogo.style.display = "block";
+        hideLinks();
     }
 });
 
+const showLinks = ()=>{
+    navLinks.classList.add("active");
+    navLinks.style.display = "block";
+    miniLogo.style.display = "none";
+}
+
+const hideLinks = ()=>{
+    navLinks.classList.remove("active");
+    navLinks.style.display = "none";
+    miniLogo.style.display = "block";
+}
 
 
 // fade in main title an button. Set opacity of both to 0 in css

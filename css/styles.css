@@ -636,11 +636,14 @@ footer p {
   background-color: #181818;
 }
 .active li {
+  padding: 25px;
   text-align: center;
-  padding: 15px 20px;
 }
 .active li:nth-of-type(n+2) {
   margin-right: 30px;
+}
+.active li a {
+  padding: 25px 150px;
 }
 
 a {
@@ -769,8 +772,9 @@ button {
 }
 @media only screen and (min-width: 414px) {
   #email {
+    display: block;
     padding: 12px 140px;
-    margin: 45px 0;
+    margin: 45px auto;
   }
 }
 @media only screen and (min-width: 390px) {
@@ -780,6 +784,7 @@ button {
 }
 @media only screen and (min-width: 768px) {
   #email {
+    display: inline-block;
     padding: 15px 125px;
     margin: 80px 50px;
   }
