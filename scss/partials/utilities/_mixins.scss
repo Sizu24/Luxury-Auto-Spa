@@ -3,7 +3,11 @@
         @content;
     }
 }
-
+@mixin mqHeight($sizeW, $sizeH){
+    @media only screen and (min-width: $sizeW) and (min-height: $sizeH){
+        @content;
+    }
+}
 @mixin mqLand($size){
     @media only screen and (min-width: $size) and (orientation: landscape){
         @content;

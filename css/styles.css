@@ -675,7 +675,12 @@ button {
 }
 @media only screen and (min-width: 360px) {
   .button {
-    margin-top: 450px;
+    margin-top: 340px;
+  }
+}
+@media only screen and (min-width: 360px) and (min-height: 812px) {
+  .button {
+    margin-top: 440px;
   }
 }
 @media only screen and (min-width: 390px) {

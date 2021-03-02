@@ -9,7 +9,10 @@ button{
     margin: 270px auto 0 auto;
     // margin: 380px auto 0 auto;
     @include mq($xi){
-        margin-top: 450px;
+        margin-top: 340px;
+    }
+    @include mqHeight($xi, $xiHeight){
+        margin-top: 440px;
     }
     @include mq($tw){
         margin-top: 360px;
