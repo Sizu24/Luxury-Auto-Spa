@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".js-burger");
-const navLinks = document.querySelector(".js-nav");
+const navLinks = document.querySelector("#js-nav");
 const miniLogo = document.querySelector(".js-logo");
 
 const services = {
@@ -8,6 +8,16 @@ const services = {
     interior: "Interior vacuume, window cleaning, wheels and tires, wax, polish.",
     engine: "Engine wash, shine, cleaning."
 };
+
+const active = 
+`
+<ul class="js-nav">
+    <li><a href=#header>Home</a></li>
+    <li><a href=#services>Services</a></li>
+    <li><a href=#about>About</a></li>
+    <li><a href=#contact>Contact</a></li>
+</ul>  
+`;
 
 const serviceDescription = document.querySelector(".service-description");
 const exteriorDescription = document.querySelector(".exterior-description");
@@ -37,8 +47,10 @@ window.addEventListener("click", e =>{
     }
 });
 
+
 const showLinks = ()=>{
     navLinks.classList.add("active");
+    navLinks.innerHTML = active;
     navLinks.style.display = "block";
     miniLogo.style.display = "none";
 }
@@ -53,3 +65,9 @@ const hideLinks = ()=>{
 // fade in main title an button. Set opacity of both to 0 in css
 $(".title").animate({"opacity": "1"}, 3500);
 $("#service-button").animate({"opacity": "1"}, 3000);
+
+
+/*
+add innerhtml
+
+*/

@@ -9,7 +9,7 @@ button{
     margin: 270px auto 0 auto;
     // margin: 380px auto 0 auto;
     @include mq($xi){
-        margin-top: 465px;
+        margin-top: 450px;
     }
     @include mq($tw){
         margin-top: 360px;
@@ -17,7 +17,14 @@ button{
     @include mq($sm){
         margin-top: 420px;
     }
+    @include mq($md){
+        margin-top: 600px;
+    }
     @include mq($lg){
+        margin-top: 830px;
+        text-align: center;
+    }
+    @include mq($mb){
         grid-column: 3/5;
         grid-row: 2;
         margin-top: 180px;

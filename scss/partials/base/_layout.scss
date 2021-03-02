@@ -1,7 +1,7 @@
 #landing-wrapper{
     grid-template-columns: 1fr;
 
-    @include mq($lg){
+    @include mq($mb){
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         // grid-template-rows: repeat(auto-fill, 1fr);
@@ -20,7 +20,7 @@
     "main"
     "footer";
 
-    @include mq($lg){
+    @include mq($mb){
 
 
         grid-template-columns: 1fr 1fr 1fr 1fr;

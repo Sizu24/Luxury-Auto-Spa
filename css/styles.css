@@ -1,7 +1,7 @@
 #landing-wrapper {
   grid-template-columns: 1fr;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   #landing-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,7 +14,7 @@
   grid-template-columns: 1fr;
   grid-template-areas: "navigation" "header" "main" "footer";
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "navigation navigation navigation navigation" "header header header header" "main main main main" "footer footer footer footer";
@@ -399,17 +399,16 @@ h1 {
   font-family: ltc-bodoni-175, serif;
   font-weight: 400;
   font-style: normal;
-  grid-column: 3/5;
-  grid-row: 1;
   font-size: 4em;
   color: #f1f1f1f1;
   margin: 50px 0 0 0;
   padding-top: 45px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   h1 {
+    grid-column: 3/5;
+    grid-row: 1;
     margin: 60px 0 0;
     font-size: 8em;
   }
@@ -428,7 +427,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   h2 {
     font-size: 3em;
   }
@@ -446,7 +445,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   h3 {
     margin: 80px 45px 0 50px;
   }
@@ -577,34 +576,36 @@ footer p {
   background-color: #181818;
   height: 52px;
 }
-#main-nav ul {
+#main-nav .large-nav {
   text-align: center;
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  #main-nav ul {
+  #main-nav .large-nav {
     display: block;
+    padding-right: 50px;
+  }
+  #main-nav .large-nav a {
+    padding: 25px;
   }
 }
-#main-nav li {
+#main-nav .large-nav li {
   list-style: none;
   color: #a7a7a7f1;
   transition-duration: 500ms;
   cursor: pointer;
 }
-#main-nav li:hover {
+#main-nav .large-nav li:hover {
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
-  #main-nav ul {
-    padding-right: 50px;
-  }
-  #main-nav ul a {
-    padding: 25px;
-  }
-  #main-nav li {
+  #main-nav .large-nav li {
     display: inline-block;
     padding: 5px 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #main-nav .large-nav li {
     margin: 0 20px;
   }
 }
@@ -632,12 +633,19 @@ footer p {
 }
 
 .active {
-  display: "block";
   background-color: #181818;
+}
+.active ul {
+  list-style: none;
 }
 .active li {
   padding: 25px;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .active li {
+    display: none;
+  }
 }
 .active li:nth-of-type(n+2) {
   margin-right: 30px;
@@ -667,7 +675,7 @@ button {
 }
 @media only screen and (min-width: 360px) {
   .button {
-    margin-top: 465px;
+    margin-top: 450px;
   }
 }
 @media only screen and (min-width: 390px) {
@@ -680,7 +688,18 @@ button {
     margin-top: 420px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .button {
+    margin-top: 600px;
+  }
+}
 @media only screen and (min-width: 1024px) {
+  .button {
+    margin-top: 830px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1280px) {
   .button {
     grid-column: 3/5;
     grid-row: 2;
@@ -842,7 +861,7 @@ button {
     height: 90vh;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   #main-image {
     background-image: url("../images/main-car.jpg");
     margin-top: 52px;
@@ -892,6 +911,11 @@ figure {
 }
 @media only screen and (min-width: 768px) {
   figure {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  figure {
     margin-top: -24px;
     height: 450px;
   }
@@ -902,7 +926,12 @@ figure {
   width: 100%;
   border: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+  #white-car {
+    bottom: 150px;
+  }
+}
+@media only screen and (min-width: 1280px) {
   #white-car {
     bottom: 300px;
   }
@@ -929,7 +958,7 @@ figure {
   width: 100%;
   position: relative;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   #engine {
     bottom: 200px;
   }

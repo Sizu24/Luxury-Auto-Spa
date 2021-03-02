@@ -5,30 +5,11 @@
     width: 100%;
     background-color: #181818;
     height: 52px;
-
-    ul{
+    .large-nav{
         text-align: center;
         display: none;
         @include mq($md){
             display: block;
-        }
-    }
-    li{
-        
-        list-style: none;    
-        color: #a7a7a7f1;
-
-        transition-duration: 500ms;
-        cursor: pointer;
-        &:hover{
-            // background-color: rgb(173, 173, 173);
-            // color: rgb(59, 59, 59);
-            // border-radius: 3px;
-            cursor: pointer;
-        }
-    }
-    @include mq($md){
-        ul{
             // display: flex;
             // justify-content: space-around;
             // float: right;
@@ -38,11 +19,28 @@
             }
         }
         li{
-            display: inline-block;
-            padding: 5px 10px;
-            margin: 0 20px;
+            
+            list-style: none;    
+            color: #a7a7a7f1;
+    
+            transition-duration: 500ms;
+            cursor: pointer;
+            &:hover{
+                // background-color: rgb(173, 173, 173);
+                // color: rgb(59, 59, 59);
+                // border-radius: 3px;
+                cursor: pointer;
+            }
+            @include mq($md){
+                display: inline-block;
+                padding: 5px 10px;
+            }
+            @include mq($lg){
+                margin: 0 20px;
+            }
         }
     }
+
 }
 
 #hamburger{
@@ -66,9 +64,14 @@
 
   // nav link styles after .active class is added when clicking hamburger
   .active{
-    display: "block";
     background-color: #181818;
-      li{
+    ul{
+        list-style: none;
+    }
+    li{
+        @include mq($md){
+            display: none;
+        }
         padding: 25px;
         text-align: center;
         // margin for list items, except for first item to offset margin for mini logo
@@ -85,6 +88,5 @@
                 padding: 25px 115px;
             }
         }
-
-      }
+    }
   }

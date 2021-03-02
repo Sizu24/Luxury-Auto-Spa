@@ -11,7 +11,7 @@
         background-position: 50% -90%;
         height: 90vh;
     }
-    @include mq($lg){
+    @include mq($mb){
         background-image: url("../images/main-car.jpg");
         margin-top: 52px;
         background-position: 100% 65%; 
@@ -51,6 +51,9 @@ figure{
         height: 270px;
     }
     @include mq($md){
+        height: 450px;
+    }
+    @include mq($lg){
         margin-top: -24px;
         height: 450px;
     }
@@ -61,7 +64,10 @@ figure{
     width: 100%;
     // margin-bottom: -4px;
     border: none;
-    @include mq($md){
+    @include mq($lg){
+        bottom: 150px;
+    }
+    @include mq($mb){
         bottom: 300px;
     }
 }
@@ -82,7 +88,7 @@ figure{
 #engine{
     width: 100%;
     position: relative;
-    @include mq($md){
+    @include mq($lg){
         bottom: 200px;
     }
 

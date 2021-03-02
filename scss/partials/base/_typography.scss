@@ -9,15 +9,16 @@ h1{
     font-family: ltc-bodoni-175, serif;
     font-weight: 400;
     font-style: normal;
-    grid-column: 3/5;
-    grid-row: 1;
     font-size: 4em;
     color: #f1f1f1f1;
     margin: 50px 0 0 0;
     padding-top: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    @include mq($lg){
+    text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    @include mq($mb){
+        grid-column: 3/5;
+        grid-row: 1;
         margin: 60px 0 0;
         font-size: 8em;
     }
@@ -34,7 +35,7 @@ h2{
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    @include mq($lg){
+    @include mq($mb){
         font-size: 3.0em;
     }
 }
@@ -50,7 +51,7 @@ h3{
 
     margin-left: auto;
     margin-right: auto;
-    @include mq($lg){
+    @include mq($mb){
         margin: 80px 45px 0 50px;
     }
 }
