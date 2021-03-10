@@ -133,10 +133,44 @@ i{
     
         }
     }
+    @include mq($mb){
+        #arrow{
+            margin-top: 50px;
+            z-index: 1000;
+        }
+
+    }
 
 }
 .fa-instagram{
     &:hover{
         cursor: pointer;
     }
+}
+
+.about-image{
+    overflow: visible;
+    img{
+    width: 100vw;
+    }
+
+    @include mq($lg){
+        img{
+            width: 40vw;
+        }
+        width: 100%;
+        margin: 90px;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-image{
+    img{
+        width: 80vw;
+        overflow: visible;
+        @include mq($mb){
+            width: 30%;
+        }
+    }
+
 }

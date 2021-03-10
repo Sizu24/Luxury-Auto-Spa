@@ -37,6 +37,34 @@ main {
   grid-area: main;
 }
 
+#about {
+  display: grid;
+}
+@media only screen and (min-width: 1024px) {
+  #about {
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 100px 400px 150px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-image {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about-description {
+    display: inline-block;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+}
+
+#contact {
+  margin-bottom: 70px;
+}
+
 footer {
   grid-area: footer;
   display: flex;
@@ -527,10 +555,30 @@ a:visited {
   font-family: "Lato", sans-serif;
 }
 
-@media only screen and (min-width: 390px) {
-  #contact {
-    margin-top: 700px;
+.about-description h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin: 150px 0px 0 30px;
+  color: #1f1f1f;
+}
+@media only screen and (min-width: 1024px) {
+  .about-description h2 {
+    margin-left: 0;
   }
+}
+.about-description p {
+  font-family: "Lato", sans-serif;
+  margin: 30px 20px 0 30px;
+  line-height: 2em;
+}
+@media only screen and (min-width: 1024px) {
+  .about-description p {
+    margin-left: 0;
+  }
+}
+
+#contact {
+  text-align: center;
 }
 #contact h2, #contact h3 {
   font-family: "Lato", sans-serif;
@@ -538,6 +586,7 @@ a:visited {
   color: #000;
 }
 #contact h2 {
+  color: #000;
   padding: 25px 15px;
   font-size: 1.5em;
 }
@@ -545,6 +594,9 @@ a:visited {
   #contact h2 {
     font-size: 2em;
   }
+}
+#contact h3 {
+  text-align: center;
 }
 
 #email {
@@ -566,6 +618,12 @@ footer p {
   footer p {
     font-size: 1em;
   }
+}
+
+.attribute {
+  font-size: 0.1em;
+  text-align: center;
+  margin-left: 100px;
 }
 
 #main-nav {
@@ -810,7 +868,9 @@ button {
 }
 @media only screen and (min-width: 390px) {
   #email {
+    display: inline-block;
     padding: 10px 130px;
+    margin: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -822,20 +882,22 @@ button {
 }
 
 #phone {
-  display: inline;
+  display: inline-block;
   border: 2px solid black;
   padding: 8px 70px;
+  margin-top: 25px;
   border-radius: 50px;
   color: #1f1f1f;
 }
 @media only screen and (min-width: 414px) {
   #phone {
-    padding: 10px 105px;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 390px) {
   #phone {
     padding: 8px 95px;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1006,21 +1068,42 @@ i {
     margin-right: 400px;
   }
 }
+@media only screen and (min-width: 1280px) {
+  #arrow-link #arrow {
+    margin-top: 50px;
+    z-index: 1000;
+  }
+}
 
 .fa-instagram:hover {
   cursor: pointer;
 }
 
-#contact {
-  text-align: center;
-  margin-top: 100px;
-  height: 70vh;
+.about-image {
+  overflow: visible;
 }
-#contact h2 {
-  color: #000;
+.about-image img {
+  width: 100vw;
 }
-#contact h3 {
-  text-align: center;
+@media only screen and (min-width: 1024px) {
+  .about-image {
+    width: 100%;
+    margin: 90px;
+    margin-bottom: 20px;
+  }
+  .about-image img {
+    width: 40vw;
+  }
+}
+
+.contact-image img {
+  width: 80vw;
+  overflow: visible;
+}
+@media only screen and (min-width: 1280px) {
+  .contact-image img {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

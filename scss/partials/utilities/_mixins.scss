@@ -3,7 +3,7 @@
         @content;
     }
 }
-@mixin mqHeight($sizeW, $sizeH){
+@mixin mqLong($sizeW, $sizeH){
     @media only screen and (min-width: $sizeW) and (min-height: $sizeH){
         @content;
     }

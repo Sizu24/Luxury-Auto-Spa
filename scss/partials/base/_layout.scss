@@ -52,6 +52,32 @@ main{
 //     display: grid;
 //     grid-template-columns: 1fr 1fr 1fr;
 // }
+#about{
+    display: grid;
+    @include mq($lg){
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 100px 400px 150px;
+    }
+}
+.about{
+    &-image{
+        @include mq($lg){
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+    &-description{
+        @include mq($lg){
+            display: inline-block;
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+    }
+}
+#contact{
+margin-bottom: 70px;
+
+}
 footer{
     grid-area: footer;
     display: flex;
@@ -63,4 +89,3 @@ footer{
         height: 75px;
     }
 }
-

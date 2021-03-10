@@ -11,7 +11,7 @@ button{
     @include mq($xi){
         margin-top: 340px;
     }
-    @include mqHeight($xi, $xiHeight){
+    @include mqLong($xi, $xiHeight){
         margin-top: 440px;
     }
     @include mq($tw){
@@ -123,7 +123,9 @@ button{
         margin: 45px auto;
     }
     @include mq($tw){
+        display: inline-block;
         padding: 10px 130px;
+        margin: 20px;
     }
     @include mq($md){
         display: inline-block;
@@ -132,18 +134,20 @@ button{
     }
 }
 #phone{
-    display: inline;
+    display: inline-block;
     border: 2px solid black;
     padding: 8px 70px;
+    margin-top: 25px;
     // padding: 14px 130px;
     border-radius: 50px;
     color: #1f1f1f;
     @include mq($sm){
-        padding: 10px 105px;
+        margin: 0;
     }
         
     @include mq($tw){
         padding: 8px 95px;
+        margin: 0;
     }
     @include mq($md){
         padding: 14px 90px;
