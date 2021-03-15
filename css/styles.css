@@ -56,6 +56,7 @@ main {
 @media only screen and (min-width: 1024px) {
   .about-description {
     display: inline-block;
+    padding-right: 80px;
     grid-column: 2/4;
     grid-row: 2/3;
   }
@@ -66,7 +67,6 @@ main {
 }
 @media only screen and (min-width: 1280px) {
   #contact {
-    margin-top: 100px;
     margin-bottom: 150px;
     display: grid;
     grid-template-columns: 60% 1fr;
@@ -79,7 +79,7 @@ main {
 @media only screen and (min-width: 1280px) {
   .contact-description {
     text-align: left;
-    margin-top: 175px;
+    margin-top: 250px;
   }
 }
 
@@ -493,7 +493,8 @@ h3 {
 }
 @media only screen and (min-width: 1280px) {
   h3 {
-    margin: 80px 45px 0 50px;
+    margin: 60px 45px 0 0;
+    text-align: left;
   }
 }
 
@@ -529,6 +530,16 @@ h3 {
   background-color: #0f0f0f;
 }
 @media only screen and (min-width: 768px) {
+  .service-info {
+    padding: 50px 100px 70px 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .service-info {
+    padding: 50px 25px 70px 25px;
+  }
+}
+@media only screen and (min-width: 1280px) {
   .service-info {
     padding: 50px 100px 70px 100px;
   }
@@ -632,12 +643,6 @@ footer p {
 .attribute {
   font-size: 0.01em;
   text-align: center;
-  margin-left: 15%;
-}
-@media only screen and (min-width: 1024px) {
-  .attribute {
-    margin-left: 25%;
-  }
 }
 
 #main-nav {
@@ -891,6 +896,7 @@ button {
   #email {
     display: inline-block;
     padding: 15px 125px;
+    margin-left: 0;
   }
 }
 
@@ -916,7 +922,7 @@ button {
 @media only screen and (min-width: 768px) {
   #phone {
     padding: 14px 90px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 }
 
@@ -1108,16 +1114,32 @@ i {
   .about-image img {
     width: 40vw;
   }
+  .about-image .attribute {
+    margin-left: 25%;
+  }
 }
 
 .contact-image {
   width: 100%;
-  padding-bottom: 150px;
+  padding-bottom: 25px;
   overflow: visible;
+  text-align: center;
+  margin-bottom: 18%;
+}
+@media only screen and (min-width: 768px) {
+  .contact-image {
+    margin: 50px auto 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-image {
+    margin: 50px auto 320px;
+  }
 }
 .contact-image img {
   width: 100vw;
   overflow: visible;
+  width: 70%;
 }
 @media only screen and (min-width: 1280px) {
   .contact-image img {

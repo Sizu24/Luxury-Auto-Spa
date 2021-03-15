@@ -69,6 +69,7 @@ main{
     &-description{
         @include mq($lg){
             display: inline-block;
+            padding-right: 80px;
             grid-column: 2/4;
             grid-row: 2/3;
         }
@@ -76,9 +77,7 @@ main{
 }
 #contact{
     margin-bottom: 70px;
-
     @include mq($mb){
-        margin-top: 100px;
         margin-bottom: 150px;
         display: grid;
         grid-template-columns: 60% 1fr;
@@ -88,7 +87,7 @@ main{
     text-align: center;
     @include mq($mb){
         text-align: left;
-        margin-top: 175px;
+        margin-top: 250px;
     }
 }
 footer{

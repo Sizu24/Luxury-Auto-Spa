@@ -131,6 +131,7 @@ button{
         display: inline-block;
         padding: 15px 125px;
         // margin: 80px 50px;
+        margin-left: 0;
     }
 }
 #phone{
@@ -151,7 +152,7 @@ button{
     }
     @include mq($md){
         padding: 14px 90px;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }
 .phone-link{

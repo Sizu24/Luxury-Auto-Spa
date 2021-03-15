@@ -52,7 +52,8 @@ h3{
     margin-left: auto;
     margin-right: auto;
     @include mq($mb){
-        margin: 80px 45px 0 50px;
+        margin: 60px 45px 0 0;
+        text-align: left;
     }
 }
 
@@ -95,6 +96,12 @@ h3{
         padding: 50px 100px 70px 100px;
     }
 
+    @include mq($lg){
+        padding: 50px 25px 70px 25px;
+    }
+    @include mq($mb){
+        padding: 50px 100px 70px 100px;
+    }
     width: 100%;
     // background-color: #f7f7f7;
     // background-color: #111111;
@@ -213,8 +220,4 @@ footer{
 .attribute{
     font-size: 0.01em;
     text-align: center;
-    margin-left: 15%;
-    @include mq($lg){
-        margin-left: 25%;
-    }
 }
