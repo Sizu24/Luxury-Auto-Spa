@@ -509,9 +509,14 @@ h3 {
 
 #service-button {
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
+}
+@media only screen and (min-width: 360px) {
+  #service-button {
+    font-size: 1.1em;
+  }
 }
 
 .service-title {
@@ -767,7 +772,7 @@ button {
 }
 @media only screen and (min-width: 414px) {
   .button {
-    margin-top: 420px;
+    margin-top: 400px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -792,8 +797,8 @@ button {
 }
 
 #service-button {
-  padding: 8px 80px;
-  border: 2px solid #f1f1f1f1;
+  padding: 8px 75px;
+  border: 1px solid #f1f1f1f1;
   border-radius: 50px;
   background-color: transparent;
   color: #f1f1f1f1;
