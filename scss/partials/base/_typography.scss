@@ -169,25 +169,25 @@ a{
 
 // Contact section
 #contact{
-    text-align: center;
+    // text-align: center;
     @include mq($tw){
         // margin-top: 700px;
     }
     h2, h3{
         font-family: 'Lato', sans-serif;
-        margin: 20px auto;
+        // margin: 20px auto;
         color: #000;
     }
     h2{
         color: #000;
-        padding: 25px 15px;
+        // padding: 25px 15px;
         font-size: 1.5em;
         @include mq($md){
             font-size: 2em;
         }
     }
     h3{
-        text-align: center;
+        // text-align: center;
     }
 }
 #email{
@@ -211,7 +211,10 @@ footer{
 }
 
 .attribute{
-    font-size: 0.1em;
+    font-size: 0.01em;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 15%;
+    @include mq($lg){
+        margin-left: 25%;
+    }
 }

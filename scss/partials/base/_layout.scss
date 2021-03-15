@@ -75,8 +75,21 @@ main{
     }
 }
 #contact{
-margin-bottom: 70px;
+    margin-bottom: 70px;
 
+    @include mq($mb){
+        margin-top: 100px;
+        margin-bottom: 150px;
+        display: grid;
+        grid-template-columns: 60% 1fr;
+    }
+}
+.contact-description{
+    text-align: center;
+    @include mq($mb){
+        text-align: left;
+        margin-top: 175px;
+    }
 }
 footer{
     grid-area: footer;
