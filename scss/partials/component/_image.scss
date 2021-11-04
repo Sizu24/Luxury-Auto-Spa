@@ -24,20 +24,13 @@
         background-image: linear-gradient(to left, rgba(0,0,0,1.0), rgba(0, 0, 0, 0) 50%);
     }
 }
-#logo{
-    width: 380px;
-    grid-column: 3/4;
-    grid-row: 1;
-    margin-top: 100px;
-    margin-left: 500px;
-    padding-bottom: 0;
-}
 .logo-mini{
-    margin: 20px 40px;
-    height: 8px;
+    margin: 15px 40px;
+    height: 20px;
     float: left;
     @include mq($md){
-        height: 15px;
+        height: 25px;
+        margin: 15px 40px;
     }
 }
 

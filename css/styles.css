@@ -975,23 +975,15 @@ button {
   }
 }
 
-#logo {
-  width: 380px;
-  grid-column: 3/4;
-  grid-row: 1;
-  margin-top: 100px;
-  margin-left: 500px;
-  padding-bottom: 0;
-}
-
 .logo-mini {
-  margin: 20px 40px;
-  height: 8px;
+  margin: 15px 40px;
+  height: 20px;
   float: left;
 }
 @media only screen and (min-width: 768px) {
   .logo-mini {
-    height: 15px;
+    height: 25px;
+    margin: 15px 40px;
   }
 }
 
