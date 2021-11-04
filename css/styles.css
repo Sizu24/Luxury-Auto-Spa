@@ -1143,7 +1143,7 @@ i {
 }
 @media only screen and (min-width: 1024px) {
   .contact-image {
-    margin: 50px auto 320px;
+    margin: 0px auto 320px;
   }
 }
 .contact-image img {

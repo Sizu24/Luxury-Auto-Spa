@@ -177,7 +177,7 @@ i{
         margin: 50px auto 100px;
     }
     @include mq($lg){
-        margin: 50px auto 320px;
+        margin: 0px auto 320px;
     }
     img{
         width: 100vw;
