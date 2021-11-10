@@ -133,6 +133,11 @@ i{
         }
 
     }
+    @include mq($xl){
+        #arrow{
+            margin-top: 220px;
+        }
+    }
 
 }
 .fa-instagram{
